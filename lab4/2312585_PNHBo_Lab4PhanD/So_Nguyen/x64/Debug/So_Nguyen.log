@@ -1,0 +1,8 @@
+﻿  program.cpp
+D:\Nguyên Lý Lập Trình Cấu Trúc\2312585_PNHBo_Lab4PhanD\So_Nguyen\Thuvien.h(27,23): warning C4018: '<=': signed/unsigned mismatch
+D:\Nguyên Lý Lập Trình Cấu Trúc\2312585_PNHBo_Lab4PhanD\So_Nguyen\Thuvien.h(37,23): warning C4018: '<=': signed/unsigned mismatch
+D:\Nguyên Lý Lập Trình Cấu Trúc\2312585_PNHBo_Lab4PhanD\So_Nguyen\Thuvien.h(133,23): warning C4018: '<=': signed/unsigned mismatch
+D:\Nguyên Lý Lập Trình Cấu Trúc\2312585_PNHBo_Lab4PhanD\So_Nguyen\Thuvien.h(135,15): warning C4018: '>': signed/unsigned mismatch
+D:\Nguyên Lý Lập Trình Cấu Trúc\2312585_PNHBo_Lab4PhanD\So_Nguyen\menu.h(23,18): warning C4566: character represented by universal-character-name '\u0111' cannot be represented in the current code page (1252)
+D:\Nguyên Lý Lập Trình Cấu Trúc\2312585_PNHBo_Lab4PhanD\So_Nguyen\menu.h(27,18): warning C4566: character represented by universal-character-name '\u2264' cannot be represented in the current code page (1252)
+  So_Nguyen.vcxproj -> D:\Nguyên Lý Lập Trình Cấu Trúc\2312585_PNHBo_Lab4PhanD\x64\Debug\So_Nguyen.exe
