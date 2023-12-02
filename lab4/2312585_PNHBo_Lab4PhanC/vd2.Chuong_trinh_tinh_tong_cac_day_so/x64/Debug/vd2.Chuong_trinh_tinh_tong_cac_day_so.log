@@ -1,5 +1,0 @@
-﻿  program.cpp
-D:\Nguyên Lý Lập Trình Cấu Trúc\2312585_PNHBo_Lab4PhanC\vd2.Chuong_trinh_tinh_tong_cac_day_so\Thuvien.h(25,20): warning C4018: '<=': signed/unsigned mismatch
-D:\Nguyên Lý Lập Trình Cấu Trúc\2312585_PNHBo_Lab4PhanC\vd2.Chuong_trinh_tinh_tong_cac_day_so\Thuvien.h(38,20): warning C4018: '<=': signed/unsigned mismatch
-D:\Nguyên Lý Lập Trình Cấu Trúc\2312585_PNHBo_Lab4PhanC\vd2.Chuong_trinh_tinh_tong_cac_day_so\Thuvien.h(51,20): warning C4018: '<=': signed/unsigned mismatch
-  vd2.Chuong_trinh_tinh_tong_cac_day_so.vcxproj -> D:\Nguyên Lý Lập Trình Cấu Trúc\2312585_PNHBo_Lab4PhanC\x64\Debug\vd2.Chuong_trinh_tinh_tong_cac_day_so.exe

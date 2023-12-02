@@ -1,2 +1,0 @@
-﻿program.obj : error LNK2019: unresolved external symbol "void __cdecl ChayChuongTrinh(void)" (?ChayChuongTrinh@@YAXXZ) referenced in function main
-D:\Nguyên Lý Lập Trình Cấu Trúc\2312585_PNHBo_Lab4PhanC\x64\Debug\Tao_Cau_Truc_Chuong_Trinh.exe : fatal error LNK1120: 1 unresolved externals
