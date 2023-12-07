@@ -34,7 +34,7 @@ int main() {
     cout << "Nhap so nguyen n : "; cin >> n;
     XuatSo(n);
     cout << "\nSo luong cac so chia het cho 3 nhung khong chia het cho 4 la : "; DemSo(n);
-    cout << "\nDem So luong chu so nguyen la :"; DemSoLuongn(n);
+    cout << "\nDem So luong chu so nguyen la : "; DemSoLuongn(n);
     cout << "\nSo " << n << " sau khi dao nguoc la : "; DaoNguocSo(n);
     cout << "\nTong cac chu so nguyen trong " << n << " la: "; TinhTongCacSon(n);
     cout << "\nChu so dau tien trong " << n << " la: "; ChuSoDauTien(n);

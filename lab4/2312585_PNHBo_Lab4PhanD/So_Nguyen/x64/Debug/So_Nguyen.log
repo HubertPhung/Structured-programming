@@ -1,0 +1,32 @@
+﻿  program.cpp
+D:\Nguyên Lý Lập Trình Cấu Trúc\BaiTapC++\lab4\2312585_PNHBo_Lab4PhanD\So_Nguyen\thuvien.h(29,23): warning C4018: '<=': signed/unsigned mismatch
+  (compiling source file 'program.cpp')
+  
+D:\Nguyên Lý Lập Trình Cấu Trúc\BaiTapC++\lab4\2312585_PNHBo_Lab4PhanD\So_Nguyen\thuvien.h(39,23): warning C4018: '<=': signed/unsigned mismatch
+  (compiling source file 'program.cpp')
+  
+D:\Nguyên Lý Lập Trình Cấu Trúc\BaiTapC++\lab4\2312585_PNHBo_Lab4PhanD\So_Nguyen\thuvien.h(135,23): warning C4018: '<=': signed/unsigned mismatch
+  (compiling source file 'program.cpp')
+  
+D:\Nguyên Lý Lập Trình Cấu Trúc\BaiTapC++\lab4\2312585_PNHBo_Lab4PhanD\So_Nguyen\thuvien.h(137,15): warning C4018: '>': signed/unsigned mismatch
+  (compiling source file 'program.cpp')
+  
+D:\Nguyên Lý Lập Trình Cấu Trúc\BaiTapC++\lab4\2312585_PNHBo_Lab4PhanD\So_Nguyen\menu.h(19,10): warning C4566: character represented by universal-character-name '\u1EDB' cannot be represented in the current code page (1252)
+  (compiling source file 'program.cpp')
+  
+D:\Nguyên Lý Lập Trình Cấu Trúc\BaiTapC++\lab4\2312585_PNHBo_Lab4PhanD\So_Nguyen\menu.h(22,10): warning C4566: character represented by universal-character-name '\u1EE5' cannot be represented in the current code page (1252)
+  (compiling source file 'program.cpp')
+  
+D:\Nguyên Lý Lập Trình Cấu Trúc\BaiTapC++\lab4\2312585_PNHBo_Lab4PhanD\So_Nguyen\menu.h(22,10): warning C4566: character represented by universal-character-name '\u0111' cannot be represented in the current code page (1252)
+  (compiling source file 'program.cpp')
+  
+D:\Nguyên Lý Lập Trình Cấu Trúc\BaiTapC++\lab4\2312585_PNHBo_Lab4PhanD\So_Nguyen\menu.h(24,10): warning C4566: character represented by universal-character-name '\u1EE5' cannot be represented in the current code page (1252)
+  (compiling source file 'program.cpp')
+  
+D:\Nguyên Lý Lập Trình Cấu Trúc\BaiTapC++\lab4\2312585_PNHBo_Lab4PhanD\So_Nguyen\menu.h(27,10): warning C4566: character represented by universal-character-name '\u1EE5' cannot be represented in the current code page (1252)
+  (compiling source file 'program.cpp')
+  
+D:\Nguyên Lý Lập Trình Cấu Trúc\BaiTapC++\lab4\2312585_PNHBo_Lab4PhanD\So_Nguyen\menu.h(59,6): warning C4101: 'kq': unreferenced local variable
+  (compiling source file 'program.cpp')
+  
+  So_Nguyen.vcxproj -> D:\Nguyên Lý Lập Trình Cấu Trúc\BaiTapC++\lab4\2312585_PNHBo_Lab4PhanD\x64\Debug\So_Nguyen.exe
