@@ -1,0 +1,2 @@
+﻿GitHub Copilot 1.137.0.0 (v1.137.0.0@2f127d06d)
+GitHub Copilot Agent 1.137.0 (1.137.0)
