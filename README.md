@@ -1,4 +1,4 @@
-# Lớp CTK74A - Nhóm 6
+# Lớp CTK47A - Nhóm 6
 ## Học C++
 ### Phần Mềm Sử Dụng:
 * Visual Studio
