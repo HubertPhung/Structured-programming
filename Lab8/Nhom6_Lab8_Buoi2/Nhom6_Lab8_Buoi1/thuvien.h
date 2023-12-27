@@ -68,28 +68,34 @@ void XuatTieuDe() {
 }
 
 void Nhap_1_ThueBao(ThueBao& p) {
-	cout << "\nNhap ma so thue bao(gom 7 chu so): ";
-	cin.ignore();
-	cin >> p.maThueBao;
+	
+
+	do {
+		cout << "\nNhap ma so thue bao(gom 7 chu so): ";
+		cin.ignore();
+		cin >> p.maThueBao;
+	} while (p.maThueBao / 1000000 < 1 || p.maThueBao / 1000000 >= 10);
 
 	cout << "\nHo va ten: ";
 	cin.ignore();
 	getline(cin ,p.hoTen);
 
 	cout << "\nDia chi: ";
-	cin.ignore();
 	getline(cin ,p.diaChi);
 
 	cout << "\nSo DT: ";
-	cin.ignore();
 	getline(cin ,p.soDT);
 
-	cout << "\nNhap ngay hop dong: ";
-	cin >> p.ntn.ngay;
-
-	cout << "\nNhap thang hop dong: ";
-	cin >> p.ntn.thang;
-
+	
+	do {
+		cout << "\nNhap ngay hop dong: ";
+		cin >> p.ntn.ngay;
+	} while (p.ntn.ngay > 31 || p.ntn.ngay <= 0);
+	
+	do {
+		cout << "\nNhap thang hop dong: ";
+		cin >> p.ntn.thang;
+	} while (p.ntn.ngay > 12 || p.ntn.thang <= 0);
 	cout << "\nNhap nam hop dong: ";
 	cin >> p.ntn.nam;
 }
@@ -119,22 +125,19 @@ void Xuat_DS_ThueBao(DSThueBao dstb, int n) {
 	for (int i = 0; i < n; i++) {
 		cout << endl;
 		Xuat_1_ThueBao(dstb[i]);
-		
 	}
 }
 
 string TimTen(string hoTen) {
-	int viTri = 0;
-	int doDai = 0;
 	for (int i = hoTen.length() - 1; i >= 0; i--) {
 		if (hoTen[i] == ' ' || hoTen[i] == '_') {
-			viTri = i;
-			break;
+			return hoTen.substr(i + 1);
 		}
-		doDai++;
+		
 	}
-	return hoTen.substr(viTri + 1, doDai);
+	return hoTen;
 }
+
 
 void Tim_SDT_Ten(DSThueBao dstb, int n, string ten) {
 	
@@ -142,7 +145,7 @@ void Tim_SDT_Ten(DSThueBao dstb, int n, string ten) {
 	
 	for (int i = 0; i < n; i++) {
 		if (ten.compare(TimTen(dstb[i].hoTen)) == 0) {
-			Xuat_1_ThueBao(dstb[i]);
+			Xuat_1_ThueBao(dstb[i]); cout << endl;
 			dem++;
 		}
 	}
@@ -206,10 +209,8 @@ void CapNhat(DSThueBao dstb, int n) {
 	{
 		cout << "\nKo co ma thue bao ban can tim"; return;
 	}
-	cout << endl << timthuebao;
-	ThueBao tb;
-	Nhap_1_ThueBao(tb);
-	dstb[timthuebao] = tb;
+	cout << endl << "Nhap thong tin thue bao can thay doi: ";
+	Nhap_1_ThueBao(dstb[timthuebao]);
 }
 
 
@@ -217,20 +218,14 @@ void CapNhat(DSThueBao dstb, int n) {
 ///////////////////////////////////////////////////////////////////////
 
 string TimSDT(string sdt) {
-
-	int viTri;
-	int doDai = 0;
-	for (int i = 0; i < sdt.length() - 1; i++) {
-		if (sdt[i] == '.')
-		{
-			viTri = i; 
-			break;
-		}
-		doDai++;
+	int viTri = sdt.find('.');
+	if (viTri != -1) {
+		return sdt.substr(viTri + 1);
 	}
-	return sdt.substr(viTri + 1, sdt.length() - (doDai));
+	else {
+		return "";
+	}
 }
-
 
 void SapXepTheoSDT(DSThueBao dstb, int n) {
 	
@@ -245,15 +240,57 @@ void SapXepTheoSDT(DSThueBao dstb, int n) {
 }
 
 ///////////////////////////////////////////////////////////
-void ThongKe(DSThueBao dstb, int n) {
-	map<string, int> thongKe;
-	int x = 0;
-	for (int i = 0; i < n; i++) {
-		x = dstb[i].soDT.length() - TimSDT(dstb[i].soDT).length() - 1;
-		thongKe[dstb[i].soDT.substr(0, x)]++;
+//void ThongKe(DSThueBao dstb, int n) {
+//	map<string, int> thongKe;
+//	int x = 0;
+//	for (int i = 0; i < n; i++) {
+//		x = dstb[i].soDT.length() - TimSDT(dstb[i].soDT).length() - 1;
+//		thongKe[dstb[i].soDT.substr(0, x)]++;
+//	}
+//
+//	for (const auto& pair : thongKe) {
+//		cout << setiosflags(iostream::left) << "\n" << setw(20) << pair.first << pair.second;
+//	}
+//}
+
+///////////////////////////////////////////////////////////////////////////
+struct ThongKe1
+{
+	string ma;
+	int soluong;
+};
+
+typedef ThongKe1 DSThongKe[MAX];
+
+void TK(DSThueBao dstb, int n)
+{
+	DSThongKe dstk = {};
+	int k = 0;
+
+	for (int i = 0; i < n; i++)
+	{
+		string maVung = dstb[i].soDT.substr(0, dstb[i].soDT.find('.'));
+		int d = -1;
+
+		for (int j = 0; j < k; j++)
+		{
+			if (maVung == dstk[j].ma)
+			{
+				dstk[j].soluong++;
+				d = j;
+				break;
+			}
+		}
+
+		if (d == -1)
+		{
+			dstk[k++] = { maVung, 1 };
+		}
 	}
 
-	for (const auto& pair : thongKe) {
-		cout << setiosflags(iostream::left) << "\n" << setw(20) << pair.first << pair.second;
+	cout<<endl << setiosflags(ios::left) << setw(20) << "Ma" << "So Luong\n";
+	for (int i = 0; i < k; i++)
+	{
+		cout << setiosflags(ios::left) << setw(20) << dstk[i].ma << dstk[i].soluong << endl;
 	}
 }

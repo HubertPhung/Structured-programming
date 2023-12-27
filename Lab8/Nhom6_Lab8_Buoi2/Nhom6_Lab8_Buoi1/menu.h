@@ -56,6 +56,7 @@ void XuLyMenu(int menu, DSThueBao dstb, int& n) {
 		Xuat_DS_ThueBao(dstb, n);
 		break;
 	case 3:
+		Xuat_DS_ThueBao(dstb, n);
 		cout << "\n3. Tim so dien thoai khi biet ten";
 		
 		cout << "\nNhap ten can tim: ";
@@ -74,7 +75,6 @@ void XuLyMenu(int menu, DSThueBao dstb, int& n) {
 		getline(cin, fileName);
 		
 		DocFile(dstb, n, fileName);
-		cout << "\n2. Xuat danh sach thue bao";
 		Xuat_DS_ThueBao(dstb, n);
 		break;
 	case 6:
@@ -104,8 +104,7 @@ void XuLyMenu(int menu, DSThueBao dstb, int& n) {
 	case 9:
 		Xuat_DS_ThueBao(dstb, n);
 		cout << "\n9. In bang thong ke so thue bao theo ma vung.";
-		ThongKe(dstb, n);
-		Xuat_DS_ThueBao(dstb, n);
+		TK(dstb, n);
 		break;
 
 	default:

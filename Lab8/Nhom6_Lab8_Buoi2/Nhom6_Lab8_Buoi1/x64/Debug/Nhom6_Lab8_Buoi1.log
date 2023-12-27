@@ -1,8 +1,8 @@
 ﻿  FileName.cpp
-D:\Download\Nhom6_Lab8_Buoi1\Nhom6_Lab8_Buoi1\Nhom6_Lab8_Buoi1\Thuvien.h(129,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\phung\Downloads\Nhom6_Lab8_Buoi2\Nhom6_Lab8_Buoi1\Thuvien.h(132,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file 'FileName.cpp')
   
-D:\Download\Nhom6_Lab8_Buoi1\Nhom6_Lab8_Buoi1\Nhom6_Lab8_Buoi1\Thuvien.h(252,61): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\phung\Downloads\Nhom6_Lab8_Buoi2\Nhom6_Lab8_Buoi1\Thuvien.h(221,12): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file 'FileName.cpp')
   
-  Nhom6_Lab8_Buoi1.vcxproj -> D:\Download\Nhom6_Lab8_Buoi1\Nhom6_Lab8_Buoi1\x64\Debug\Nhom6_Lab8_Buoi1.exe
+  Nhom6_Lab8_Buoi1.vcxproj -> C:\Users\phung\Downloads\Nhom6_Lab8_Buoi2\x64\Debug\Nhom6_Lab8_Buoi1.exe
