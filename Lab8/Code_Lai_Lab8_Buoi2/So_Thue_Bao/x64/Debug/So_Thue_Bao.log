@@ -1,2 +1,11 @@
 ﻿  So_Thueb_Bao.cpp
+D:\Nguyên Lý Lập Trình Cấu Trúc\BaiTapC++\Lab8\Code_Lai_Lab8_Buoi2\So_Thue_Bao\ThuVien.h(93,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'So_Thueb_Bao.cpp')
+  
+D:\Nguyên Lý Lập Trình Cấu Trúc\BaiTapC++\Lab8\Code_Lai_Lab8_Buoi2\So_Thue_Bao\ThuVien.h(153,33): warning C4390: ';': empty controlled statement found; is this the intent?
+  (compiling source file 'So_Thueb_Bao.cpp')
+  
+D:\Nguyên Lý Lập Trình Cấu Trúc\BaiTapC++\Lab8\Code_Lai_Lab8_Buoi2\So_Thue_Bao\ThuVien.h(173,12): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'So_Thueb_Bao.cpp')
+  
   So_Thue_Bao.vcxproj -> D:\Nguyên Lý Lập Trình Cấu Trúc\BaiTapC++\Lab8\Code_Lai_Lab8_Buoi2\x64\Debug\So_Thue_Bao.exe

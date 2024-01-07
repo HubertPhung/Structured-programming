@@ -1,0 +1,11 @@
+﻿  program.cpp
+D:\Nguyên Lý Lập Trình Cấu Trúc\BaiTapC++\Lab8\CodeQuanLyXe\CodeQuanLyXe\Thuvien.h(54,11): warning C4129: 'T': unrecognized character escape sequence
+  (compiling source file 'program.cpp')
+  
+D:\Nguyên Lý Lập Trình Cấu Trúc\BaiTapC++\Lab8\CodeQuanLyXe\CodeQuanLyXe\Thuvien.h(73,21): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'program.cpp')
+  
+D:\Nguyên Lý Lập Trình Cấu Trúc\BaiTapC++\Lab8\CodeQuanLyXe\CodeQuanLyXe\Menu.h(7,10): warning C4566: character represented by universal-character-name '\u0111' cannot be represented in the current code page (1252)
+  (compiling source file 'program.cpp')
+  
+  CodeQuanLyXe.vcxproj -> D:\Nguyên Lý Lập Trình Cấu Trúc\BaiTapC++\Lab8\CodeQuanLyXe\x64\Debug\CodeQuanLyXe.exe

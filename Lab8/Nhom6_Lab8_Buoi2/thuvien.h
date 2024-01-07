@@ -38,7 +38,7 @@ void TK(DSThueBao dstb, int n);
 
 
 void NhapCoDinh(DSThueBao dstb, int &n) {
-	dstb[0] = { 1000579, "Nguyen Quoc Binh","Da Lat","051.3432157",{1,3,2007} };
+	dstb[0] = { 1000579, "Nguyen Quoc Binh","Da Lat","0515.3432157",{1,3,2007} };
 	dstb[1] = { 1000821, "Tran Dinh Quy","Da Lat","051.2650120",{1,5,2010} };
 	dstb[2] = { 1000720, "Phan Duc Hai","Di Linh","045.0364722",{1,1,2006} };
 	dstb[3] = { 1000521, "Le Van A","Don Duong","049.141213",{1,5,2004} };
@@ -184,6 +184,7 @@ void HoanVi(ThueBao& a, ThueBao& b) {
 	a = b;
 	b = t;
 }
+
 
 void Sap_MaVung(DSThueBao dstb, int n) {
 	for (int i = 0; i < n - 1; i++) {
