@@ -23,7 +23,7 @@ int ChonMenu(int soMenu) {
 	return stt;
 }
 
-void XuLyMenu(int menu, DSQuanLyXe dsqlxe, int &n) {
+void XuLyMenu(int menu, DSQuanLyXe dsqlxe, int &n, DanhSachHang dsh) {
 	int x, y;
 	string tenHang;
 	int namXoa;
@@ -47,10 +47,12 @@ void XuLyMenu(int menu, DSQuanLyXe dsqlxe, int &n) {
 		cout << "\n[4] Tinh tong gia mua cua tat ca xe co nam san xuat thuoc[x, y](x, y la nam duoc nhap).";
 		XuatDSXe(dsqlxe, n);
 		cout << "\nNhap nam san xuat trong khoang [x,y]";
-		cout << "\nNhap nam x : ";
-		cin >> x;
-		cout << "\nNhap nam y : ";
-		cin >> y;
+		do {
+			cout << "\nNhap nam x (x < y) : ";
+			cin >> x;
+			cout << "\nNhap nam y : ";
+			cin >> y;
+		} while (x > y);
 		cout << "\ntTong gia xe cac nam trong khoang [x,y] la :" << TongGiaXeCoNamXY(dsqlxe, n, x, y) << " Trieu Dong";
 		break;
 	case 5:
@@ -80,7 +82,7 @@ void XuLyMenu(int menu, DSQuanLyXe dsqlxe, int &n) {
 		cout << "\n[8] In bang thong ke so xe theo hang san xuat";
 		XuatDSXe(dsqlxe, n);
 		cout << endl;
-		inThongKeHangSX(dsqlxe, n);
+		InBangThongKeTheoHang(dsqlxe, n, dsh);
 		break;
 	default:
 		break;
@@ -107,8 +109,9 @@ void ChayChuongTrinh() {
 		{"42E164649","Future",2003,"Honda",21},
 		{"41E164640","Future",2004,"Honda",8}
 	};
+	DanhSachHang dsh;
 	do {
 		menu = ChonMenu(soMenu);
-		XuLyMenu(menu, dsqlxe, n);
+		XuLyMenu(menu, dsqlxe, n, dsh);
 	} while (menu > 1);
 }

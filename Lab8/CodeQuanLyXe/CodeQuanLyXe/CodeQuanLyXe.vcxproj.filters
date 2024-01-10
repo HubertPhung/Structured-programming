@@ -18,6 +18,9 @@
     <ClCompile Include="program.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Thuvien.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Thuvien.h">

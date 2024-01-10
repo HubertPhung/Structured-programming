@@ -1,4 +1,5 @@
-﻿#define MAX 100
+﻿
+#define MAX 100
 
 struct ThongTinXe
 {
@@ -20,8 +21,17 @@ void TieuDe() {
 		<< setw(15) << "Gia Mua";
 }
 
+bool KtraBienSoXe(DSQuanLyXe dsqlxe, int n, string bsx) {
+	for (int i = 0; i < n; i++) {
+		if (dsqlxe[i].banSoXe.compare(bsx)!=0)
+			return true;
+	}
+	return false;
+}
+
 void Nhap1Xe(ThongTinXe& tt) {
-	cout << "\nNhap ban so xe : ";
+	
+	cout << "\Nhap ban so xe : ";
 	cin.ignore();
 	getline(cin, tt.banSoXe);
 
@@ -98,11 +108,19 @@ void HoanVi(ThongTinXe& a, ThongTinXe& b) {
 }
 
 void SapXepXeTheoHang(DSQuanLyXe dsqlxe, int n) {
-	for (int i = 0; i < n - 1; i++)
+	/*for (int i = 0; i < n - 1; i++)
 		for (int j = 0; j < n - i -1; j++) {
 			if (dsqlxe[j].hangSX<dsqlxe[j + 1].hangSX || dsqlxe[j].hangSX == dsqlxe[j + 1].hangSX && dsqlxe[j].giaMua > dsqlxe[j + 1].giaMua)
 			{
 				HoanVi(dsqlxe[j], dsqlxe[j + 1]);
+			}
+		}*/
+
+	for(int i = 0; i < n - 1 ; i ++)
+		for (int j = i + 1; j < n; j++) {
+			if (dsqlxe[i].hangSX<dsqlxe[j].hangSX || dsqlxe[i].hangSX == dsqlxe[j].hangSX && dsqlxe[i].giaMua > dsqlxe[j].giaMua)
+			{
+				HoanVi(dsqlxe[i], dsqlxe[j]);
 			}
 		}
 }
@@ -119,27 +137,53 @@ void XoaXeTheoNamSX(DSQuanLyXe dsqlxe, int &n, int namXoa) {
 			n--;
 		}
 	}
+	
 }
 
 //8. In bảng thống kê số xe theo hãng sản xuất.
 
-int thongKeXeTheoHang(DSQuanLyXe dsqlxe, int n) {
-	int soLuongXeTheoHang = 0; 
-	int tongSoLuong = 0;
+struct HangSanXuat
+{
+	string Hang;
+};
 
-	for (int i = 0; i < n; i++) {
-		soLuongXeTheoHang = 1;
-		for (int j = i + 1; j < n; j++) {
-			if (dsqlxe[i].hangSX == dsqlxe[j].hangSX) {
-				soLuongXeTheoHang++;
-			}
-		}
-	}
-	return soLuongXeTheoHang;
+typedef HangSanXuat DanhSachHang[MAX];
+
+int TimKiemHang(DanhSachHang dsh, int n, string item)
+{
+	for (int i = 0; i < n; i++)
+		if (dsh[i].Hang.compare(item) == 0)
+			return i;
+	return -1;
 }
-void inThongKeHangSX(DSQuanLyXe dsqlxe, int n) {
-	for (int i = 0; i < n; i++) {
-		cout << "Hang " << dsqlxe[i].hangSX << " : " << thongKeXeTheoHang(dsqlxe, n) << " xe" << endl;
-		
+
+inline void InBangThongKeTheoHang(DSQuanLyXe dsqlxe, int n, DanhSachHang dsh)
+{
+	int ma = 0;
+	int a[MAX] = {0};
+	//Lay ds hang khong trung lap
+	for (int i = 0; i < n; i++)
+		if (TimKiemHang(dsh, ma, dsqlxe[i].hangSX) == -1)
+		{
+			dsh[ma].Hang = dsqlxe[i].hangSX;
+			ma++;
+		}
+	//Thong ke theo ma vung
+	for (int j = 0; j < n; j++)
+	{
+		int index = TimKiemHang(dsh, ma, dsqlxe[j].hangSX);
+		if (index != -1) {
+			a[index]++;
+		}
+		/*for (int k = 0; k < ma; k++)
+		{
+			if (dsh[k].Hang.compare(dsqlxe[j].hangSX) == 0) 
+				a[k]++;
+		}*/
+	}
+	//in ra
+	for (int i = 0; i < ma; i++)
+	{
+		cout << dsh[i].Hang << " " << a[i] << endl;
 	}
 }
