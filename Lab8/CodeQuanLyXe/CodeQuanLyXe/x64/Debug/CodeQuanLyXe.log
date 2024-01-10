@@ -1,50 +1,23 @@
 ﻿  program.cpp
-D:\Nguyên Lý Lập Trình Cấu Trúc\BaiTapC++\Lab8\CodeQuanLyXe\CodeQuanLyXe\Thuvien.h(34,10): warning C4129: 'N': unrecognized character escape sequence
+D:\Nguyên Lý Lập Trình Cấu Trúc\BaiTapC++\Lab8\CodeQuanLyXe\CodeQuanLyXe\Thuvien.h(53,10): warning C4129: 'N': unrecognized character escape sequence
   (compiling source file 'program.cpp')
   
-D:\Nguyên Lý Lập Trình Cấu Trúc\BaiTapC++\Lab8\CodeQuanLyXe\CodeQuanLyXe\Thuvien.h(64,11): warning C4129: 'T': unrecognized character escape sequence
+D:\Nguyên Lý Lập Trình Cấu Trúc\BaiTapC++\Lab8\CodeQuanLyXe\CodeQuanLyXe\Thuvien.h(82,11): warning C4129: 'T': unrecognized character escape sequence
   (compiling source file 'program.cpp')
   
-D:\Nguyên Lý Lập Trình Cấu Trúc\BaiTapC++\Lab8\CodeQuanLyXe\CodeQuanLyXe\Thuvien.h(83,21): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\Nguyên Lý Lập Trình Cấu Trúc\BaiTapC++\Lab8\CodeQuanLyXe\CodeQuanLyXe\Thuvien.h(101,21): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
   (compiling source file 'program.cpp')
-  
-D:\Nguyên Lý Lập Trình Cấu Trúc\BaiTapC++\Lab8\CodeQuanLyXe\CodeQuanLyXe\Thuvien.h(160,5): error C2601: 'TimKiemHang': local function definitions are illegal
-  (compiling source file 'program.cpp')
-  D:\Nguyên Lý Lập Trình Cấu Trúc\BaiTapC++\Lab8\CodeQuanLyXe\CodeQuanLyXe\Thuvien.h(130,60):
-  this line contains a '{' which has not yet been matched
-  
-D:\Nguyên Lý Lập Trình Cấu Trúc\BaiTapC++\Lab8\CodeQuanLyXe\CodeQuanLyXe\Thuvien.h(168,13): error C2601: 'InBangThongKeTheoHang': local function definitions are illegal
-  (compiling source file 'program.cpp')
-  D:\Nguyên Lý Lập Trình Cấu Trúc\BaiTapC++\Lab8\CodeQuanLyXe\CodeQuanLyXe\Thuvien.h(130,60):
-  this line contains a '{' which has not yet been matched
-  
-D:\Nguyên Lý Lập Trình Cấu Trúc\BaiTapC++\Lab8\CodeQuanLyXe\CodeQuanLyXe\Menu.h(2,6): error C2601: 'XuatMenu': local function definitions are illegal
-  (compiling source file 'program.cpp')
-  D:\Nguyên Lý Lập Trình Cấu Trúc\BaiTapC++\Lab8\CodeQuanLyXe\CodeQuanLyXe\Thuvien.h(130,60):
-  this line contains a '{' which has not yet been matched
   
 D:\Nguyên Lý Lập Trình Cấu Trúc\BaiTapC++\Lab8\CodeQuanLyXe\CodeQuanLyXe\Menu.h(7,10): warning C4566: character represented by universal-character-name '\u0111' cannot be represented in the current code page (1252)
   (compiling source file 'program.cpp')
   
-D:\Nguyên Lý Lập Trình Cấu Trúc\BaiTapC++\Lab8\CodeQuanLyXe\CodeQuanLyXe\Menu.h(15,5): error C2601: 'ChonMenu': local function definitions are illegal
+D:\Nguyên Lý Lập Trình Cấu Trúc\BaiTapC++\Lab8\CodeQuanLyXe\CodeQuanLyXe\Menu.h(84,2): error C2360: initialization of 'bx' is skipped by 'case' label
   (compiling source file 'program.cpp')
-  D:\Nguyên Lý Lập Trình Cấu Trúc\BaiTapC++\Lab8\CodeQuanLyXe\CodeQuanLyXe\Thuvien.h(130,60):
-  this line contains a '{' which has not yet been matched
+  D:\Nguyên Lý Lập Trình Cấu Trúc\BaiTapC++\Lab8\CodeQuanLyXe\CodeQuanLyXe\Menu.h(79,10):
+  see declaration of 'bx'
   
-D:\Nguyên Lý Lập Trình Cấu Trúc\BaiTapC++\Lab8\CodeQuanLyXe\CodeQuanLyXe\Menu.h(26,6): error C2601: 'XuLyMenu': local function definitions are illegal
+D:\Nguyên Lý Lập Trình Cấu Trúc\BaiTapC++\Lab8\CodeQuanLyXe\CodeQuanLyXe\Menu.h(90,2): error C2361: initialization of 'bx' is skipped by 'default' label
   (compiling source file 'program.cpp')
-  D:\Nguyên Lý Lập Trình Cấu Trúc\BaiTapC++\Lab8\CodeQuanLyXe\CodeQuanLyXe\Thuvien.h(130,60):
-  this line contains a '{' which has not yet been matched
-  
-D:\Nguyên Lý Lập Trình Cấu Trúc\BaiTapC++\Lab8\CodeQuanLyXe\CodeQuanLyXe\Menu.h(96,6): error C2601: 'ChayChuongTrinh': local function definitions are illegal
-  (compiling source file 'program.cpp')
-  D:\Nguyên Lý Lập Trình Cấu Trúc\BaiTapC++\Lab8\CodeQuanLyXe\CodeQuanLyXe\Thuvien.h(130,60):
-  this line contains a '{' which has not yet been matched
-  
-D:\Nguyên Lý Lập Trình Cấu Trúc\BaiTapC++\Lab8\CodeQuanLyXe\CodeQuanLyXe\program.cpp(11,5): error C2601: 'main': local function definitions are illegal
-  D:\Nguyên Lý Lập Trình Cấu Trúc\BaiTapC++\Lab8\CodeQuanLyXe\CodeQuanLyXe\Thuvien.h(130,60):
-  this line contains a '{' which has not yet been matched
-  
-D:\Nguyên Lý Lập Trình Cấu Trúc\BaiTapC++\Lab8\CodeQuanLyXe\CodeQuanLyXe\Thuvien.h(130,60): error C1075: '{': no matching token found
-  (compiling source file 'program.cpp')
+  D:\Nguyên Lý Lập Trình Cấu Trúc\BaiTapC++\Lab8\CodeQuanLyXe\CodeQuanLyXe\Menu.h(79,10):
+  see declaration of 'bx'
   

@@ -192,25 +192,37 @@ void SapXepDS(DanhSachTB dstb, int n) {
 //
 struct ThongKe
 {
-	int soLuongKhachHang;
-	int maVung;
+	string maVung;
 };
 
 typedef ThongKe MaVungThongKe[MAX];
 
+int TimKiemMaVung(  MaVungThongKe thongKe ,int n, string vung) {
+	for (int i = 0; i < n; i++) {
+		if (thongKe[i].maVung.compare(vung) == 0)
+			return i;
+	}
+	return -1;
+}
+
 void thongKeTheoMaVung(DanhSachTB dstb, int n, MaVungThongKe thongKe) {
+	int ma = 0;
+	int a[MAX] = { 0 };
 	for (int i = 0; i < n; ++i) {
-		int maVung = stoi(dstb[i].sdt.substr(0, dstb[i].sdt.find('.')));
-		thongKe[maVung].maVung = maVung;
-		thongKe[maVung].soLuongKhachHang++;
+		if (TimKiemMaVung(thongKe, ma, dstb[i].sdt.substr(0, dstb[i].sdt.find('.'))) == -1) {
+			thongKe[ma].maVung = dstb[i].sdt.substr(0, dstb[i].sdt.find('.'));
+			ma++;
+		}
+	}
+	for (int j = 0; j < n; j++) {
+		int index = TimKiemMaVung(thongKe, ma, dstb[j].sdt.substr(0, dstb[j].sdt.find('.')));
+		if (index != -1) {
+			a[index]++;
+		}
+	}
+	for (int i = 0; i < ma; ++i) {
+		cout << "\nMa vung " << thongKe[i].maVung << ": " << a[i] << " khach hang";
+
 	}
 }
 
-void inThongKeTheoMaVung(const MaVungThongKe thongKe, int n) {
-	cout << "\nThong ke so luong khach hang theo ma vung:\n";
-	for (int i = 0; i < n; ++i) {
-		if (thongKe[i].soLuongKhachHang > 0) {
-			cout << "Ma vung " << thongKe[i].maVung << ": " << thongKe[i].soLuongKhachHang << " khach hang\n";
-		}
-	}
-}

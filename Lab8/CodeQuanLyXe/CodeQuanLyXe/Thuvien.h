@@ -23,19 +23,37 @@ void TieuDe() {
 
 bool KtraBienSoXe(DSQuanLyXe dsqlxe, int n, string bsx) {
 	for (int i = 0; i < n; i++) {
-		if (dsqlxe[i].banSoXe.compare(bsx)!=0)
-			return true;
+		if (dsqlxe[i].banSoXe.compare(bsx)==0)
+			return false;
 	}
-	return false;
+	return true;
 }
 
-void Nhap1Xe(ThongTinXe& tt) {
-	
-	cout << "\Nhap ban so xe : ";
-	cin.ignore();
-	getline(cin, tt.banSoXe);
 
+string NhapBSX(DSQuanLyXe dsqlxe, int n)
+{
+	string bx;
+	do
+	{
+		cin >> bx;
+		if (!KtraBienSoXe(dsqlxe, n, bx))
+		{
+			cout << endl << "Nhap lai: ";
+		}
+		else {
+			return bx;
+		}
+
+
+	} while (true);
+}
+
+void Nhap1Xe(ThongTinXe& tt, DSQuanLyXe dsqlxe, int n) {
+	cout << endl;
+	cout << "\Nhap ban so xe : ";
+	tt.banSoXe = NhapBSX(dsqlxe, n);
 	cout << "\nNhap ten xe : ";
+	cin.ignore();
 	getline(cin, tt.tenXe);
 
 	cout << "\nNhap nam san xuat : ";
@@ -62,7 +80,7 @@ void Xuat1Xe(ThongTinXe tt) {
 void NhapDSXe(DSQuanLyXe dsqlxe, int& n) {
 	for (int i = 0; i < n; i++) {
 		cout << "\Thong Tin Xe So : " << i + 1;
-		Nhap1Xe(dsqlxe[i]);
+		Nhap1Xe(dsqlxe[i], dsqlxe , n);
 	}
 }
 
@@ -128,7 +146,6 @@ void SapXepXeTheoHang(DSQuanLyXe dsqlxe, int n) {
 
 //7. Xóa tất cả xe theo năm sản xuất
 void XoaXeTheoNamSX(DSQuanLyXe dsqlxe, int &n, int namXoa) {
-	int temp = n;
 	for (int i = 0; i < n; i++) {
 		if (namXoa == dsqlxe[i].namSX) {
 			for (int j = i ; j < n-1; j++) {
@@ -137,8 +154,9 @@ void XoaXeTheoNamSX(DSQuanLyXe dsqlxe, int &n, int namXoa) {
 			n--;
 		}
 	}
-	
 }
+
+
 
 //8. In bảng thống kê số xe theo hãng sản xuất.
 

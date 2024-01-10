@@ -88,8 +88,8 @@ void XuLyMenu(int menu, DanhSachTB dstb , int& n, MaVungThongKe thongKe) {
 	case 9:
 		cout << "\n[9] In bang thong ke so thue bao theo ma vung.";
 		XuatDSTB(dstb, n);
+		cout << "\nThong ke theo ma vung : ";
 		thongKeTheoMaVung(dstb, n, thongKe);
-		inThongKeTheoMaVung(thongKe, MAX);
 		break;
 	default:
 		cout << "\n[0] Thoat chuong trinh.";
