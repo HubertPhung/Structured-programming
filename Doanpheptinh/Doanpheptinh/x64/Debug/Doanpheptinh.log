@@ -1,5 +1,0 @@
-﻿  program.cpp
-D:\Nguyên Lý Lập Trình Cấu Trúc\Doanpheptinh\Doanpheptinh\program.cpp(7,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-D:\Nguyên Lý Lập Trình Cấu Trúc\Doanpheptinh\Doanpheptinh\program.cpp(12,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-D:\Nguyên Lý Lập Trình Cấu Trúc\Doanpheptinh\Doanpheptinh\program.cpp(17,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  Doanpheptinh.vcxproj -> D:\Nguyên Lý Lập Trình Cấu Trúc\Doanpheptinh\x64\Debug\Doanpheptinh.exe
